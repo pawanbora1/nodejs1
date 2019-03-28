@@ -18,7 +18,7 @@ app.get('/',(req,res)=>{
 });
 app.get('/about',(req,res)=>{
     res.render('about.hbs',{
-        pageTitle:'Welcome to About page',
+        pageTitle:'Welcome to About page Dhoinobad',
         currentYear: new Date().getFullYear()
     });
 });
