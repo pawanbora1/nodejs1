@@ -1,6 +1,7 @@
 var express = require('express');
 var hbs = require('hbs');
 var app = express();
+var port = process.env.PORT||3000;
 // app.use(express.static(__dirname+'/public'));
 // app.get('/public',function (req, res) {
 //     res.send('./public')});
@@ -61,4 +62,4 @@ app.get('/att',(req,res)=>{
 
     res.send(attendence);
 });
-app.listen(3000,() => {console.log('server started at port 3000')});
+app.listen(port,() => {console.log('server started at port 3000')});
